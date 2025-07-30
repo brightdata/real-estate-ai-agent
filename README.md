@@ -62,7 +62,7 @@ Real Estate AI Agent System is a Python-based solution that leverages AI agents 
 
 ### Prerequisites
 
-- Python 3.9
+- Python 3.9+
 - Node.js + npm (for Bright Data MCP server)
 - Bright Data account with API token
 - Nebius AI API key
