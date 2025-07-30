@@ -1,0 +1,12 @@
+[project]
+name = "real-estate-ai-system"
+version = "0.1.0"
+description = "A real estate AI system"
+requires-python = "== 3.9.*"
+dependencies = [
+    # uv will populate this with 'crewai-tools', 'crewai', 'mcp', 'python-dotenv', 'pandas'
+]
+
+[tool.uv]
+# You can add uv specific configurations here if needed,
+# but for now, just having the [project] section is enough.
