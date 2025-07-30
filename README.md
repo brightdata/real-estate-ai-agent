@@ -19,7 +19,7 @@
 
 Real Estate AI Agent System is a Python-based solution that leverages AI agents and Bright Data's Model Context Protocol (MCP) server to extract, process, and deliver structured real estate property data from multiple sources.
 
-- Automates property data extraction from real estate websites like Zillow, Realtor.com, Redfin, and more  
+- Automates property data extraction from real estate websites like [Zillow](https://brightdata.com/products/web-scraper/zillow), [Realtor.com](https://brightdata.com/products/web-scraper/realtor), Redfin, and more  
 - Integrates with Bright Data proxies for robust anti-bot and geo-unblocking  
 - Uses Nebius Qwen LLM for adaptive, schema-validated property data extraction  
 - Outputs results as structured JSON for analytics or downstream applications
@@ -135,7 +135,7 @@ If successful, the script will extract property data from a real estate listing 
 
 - Extracts address, price, bedrooms, bathrooms, square footage, lot size, year built, property type, listing agent, days on market, MLS number, description, image URLs, and neighborhood.
 - Strict JSON schema validation: always outputs snake_case keys.
-- Handles proxy rotation, CAPTCHAs, and anti-bot protections using Bright Data’s MCP stack.
+- Handles [proxy rotation](https://brightdata.com/solutions/rotating-proxies), [CAPTCHAs](https://brightdata.com/products/web-unlocker/captcha-solver), and anti-bot protections using Bright Data’s MCP stack.
 - Easily extendable for more data fields and custom sources.
 
 ---
