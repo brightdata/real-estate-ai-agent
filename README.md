@@ -34,8 +34,6 @@ Real Estate AI Agent System is a Python-based solution that leverages AI agents 
 - 💡 Usage Example
 - 📈 Key Capabilities
 - 🔒 Security Best Practices
-- 🤝 Contributing
-- 📞 Support
 
 ---
 
