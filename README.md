@@ -1,62 +1,149 @@
-# Real Estate AI System
+<p align="center">
+  <a href="https://brightdata.com/">
+    <img src="https://mintlify.s3.us-west-1.amazonaws.com/brightdata/logo/light.svg" width="300" alt="Bright Data Logo">
+  </a>
+</p>
 
-A Python-based solution for extracting and processing real estate property data using AI agents.
+# Real Estate AI Agent System
 
-## Environment Setup
+**AI-Powered Solution for Real Estate Data Extraction**
 
-### Prerequisites
+<div align="center">
+  <img src="https://img.shields.io/badge/python-3.11+-brightgreen"/>
+  <img src="https://img.shields.io/badge/License-MIT-blue"/>
+</div>
+
+---
+
+## 🌟 Overview
+
+Real Estate AI Agent System is a Python-based solution that uses advanced AI agents and Bright Data's ecosystem (including the MCP server) to extract, process, and deliver structured real estate property data from multiple sources.
+
+- Automates property data extraction from real estate websites
+- Integrates with Bright Data proxies for robust anti-bot and geo-unblocking
+- AI-powered data parsing and normalization
+- Outputs results as structured JSON for downstream analytics or application use
+
+---
+
+## Table of Contents
+
+- ✨ Features
+- 🚀 Quickstart
+- 🔧 Environment Setup
+- 💡 Usage Example
+- 📈 Key Capabilities
+- 🔒 Security Best Practices
+- 🤝 Contributing
+- 📞 Support
+
+---
+
+## ✨ Features
+
+- **Intelligent AI Agents:** Leverages CrewAI and LLMs for adaptive data extraction and property detail parsing.
+- **Bright Data Integration:** Supports proxy rotation, CAPTCHA solving, and full anti-bot bypass.
+- **Multi-Platform Support:** Works with Python 3.11+ and Node.js (for MCP server).
+- **Customizable Workflows:** Easy integration into data pipelines and analytics platforms.
+- **Plug-and-Play Configuration:** Stand up your own property crawler in minutes.
+
+---
+
+## 🚀 Quickstart
+
+1. Clone this repository
+
+   ~~~sh
+   git clone https://github.com/brightdata-com/real-estate-ai-agents.git
+   cd real-estate-ai-agents
+   ~~~
+
+---
+
+## 🔧 Environment Setup
+
+**Prerequisites:**
+
 - Python 3.11+
 - Node.js + npm (for Bright Data MCP server)
 - Bright Data account with API token
 - Nebius AI API key
 
-### Installation
+**Create and activate a virtual environment:**
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/icode247/real-estate-agent.git
-   cd real-estate-ai-system
-   ```
+macOS/Linux
 
-2. Create and activate a virtual environment:
-   ```bash
-   # macOS/Linux
-   python -m venv venv
-   source venv/bin/activate
-   
-   # Windows
-   python -m venv venv
-   .\venv\Scripts\activate
-   ```
+~~~sh
+python -m venv venv
+source venv/bin/activate
+~~~
 
-3. Install dependencies:
-   ```bash
-   pip install "crewai-tools[mcp]" crewai mcp python-dotenv pandas
-   ```
+Windows
 
-4. Create a `.env` file with your API credentials:
-   ```
-   BRIGHT_DATA_API_TOKEN="your_api_token_here"
-   WEB_UNLOCKER_ZONE="your_web_unlocker_zone"
-   BROWSER_ZONE="your_browser_zone"
-   NEBIUS_API_KEY="your_nebius_api_key"
-   ```
+~~~sh
+python -m venv venv
+.\venv\Scripts\activate
+~~~
 
-## real_estate_agents.py
+**Install dependencies:**
 
-This script implements a web scraping system for real estate property data using CrewAI and Bright Data's MCP server.
+~~~sh
+pip install "crewai-tools[mcp]" crewai mcp python-dotenv pandas
+~~~
 
-### Key Features
-- Extracts property details from real estate websites
-- Returns structured JSON data
-- Uses AI agents for intelligent data extraction
-- Handles proxy rotation and CAPTCHAs
+**Create a `.env` file** with your API credentials:
 
-### Usage
-1. Ensure your `.env` file is properly configured
-2. Run the script:
-   ```bash
-   python real_estate_agents.py
-   ```
+~~~env
+BRIGHT_DATA_API_TOKEN="your_api_token_here"
+WEB_UNLOCKER_ZONE="your_web_unlocker_zone"
+BROWSER_ZONE="your_browser_zone"
+NEBIUS_API_KEY="your_nebius_api_key"
+~~~
 
-The script will output property data in JSON format.
+---
+
+## 💡 Usage Example
+
+To run the agent:
+
+~~~sh
+python real_estate_agents.py
+~~~
+
+The script will extract property data from real estate websites and output it in structured JSON format. Example output:
+
+~~~json
+{
+  "address": "123 Example St, Los Angeles, CA",
+  "price": "$900,000",
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "size_sqft": 1800,
+  "listing_url": "https://www.example.com/listing/123"
+}
+~~~
+
+---
+
+## 📈 Key Capabilities
+
+- Extracts property details such as address, price, square footage, bedrooms, bathrooms, and more
+- Supports property data normalization and enrichment for cross-site comparisons
+- Handles proxy rotation, CAPTCHA challenges, and anti-bot detection using Bright Data’s infrastructure
+- Easily extendable to support additional real estate data sources and custom use cases
+
+---
+
+## 🔒 Security Best Practices
+
+- Always store API tokens and credentials securely, such as in a `.env` file.
+- Validate and sanitize all extracted data before further analytics or storage.
+- Respect website terms of service and robots.txt directives when scraping.
+
+---
+
+<p align="center">
+  <a href="https://brightdata.com/">
+    <img src="https://mintlify.s3.us-west-1.amazonaws.com/brightdata/logo/light.svg" width="200" alt="Bright Data Logo">
+  </a>
+</p>
