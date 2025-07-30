@@ -9,7 +9,7 @@
 **AI-Powered Solution for Real Estate Data Extraction**
 
 <div align="center">
-  <img src="https://img.shields.io/badge/python-3.11+-brightgreen"/>
+  <img src="https://img.shields.io/badge/python-3.9+-brightgreen"/>
   <img src="https://img.shields.io/badge/License-MIT-blue"/>
 </div>
 
@@ -64,7 +64,7 @@ Real Estate AI Agent System is a Python-based solution that uses advanced AI age
 
 **Prerequisites:**
 
-- Python 3.11+
+- Python 3.9+
 - Node.js + npm (for Bright Data MCP server)
 - Bright Data account with API token
 - Nebius AI API key
