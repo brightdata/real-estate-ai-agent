@@ -9,7 +9,7 @@
 **AI-Powered Solution for Real Estate Data Extraction**
 
 <div align="center">
-  <img src="https://img.shields.io/badge/python-3.9-blue"/>
+  <img src="https://img.shields.io/badge/python-3.9+-blue"/>
   <img src="https://img.shields.io/badge/License-MIT-blue"/>
 </div>
 
